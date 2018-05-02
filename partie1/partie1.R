@@ -68,6 +68,8 @@ data1 <-read.csv("https://archive.ics.uci.edu/ml/machine-learning-databases/wine
 cible1 <- data1[,1]
 data1[,1]<- NULL
 
+names(data1)<-c("Alcohol","Malic acid","Ash","Alcalinity of ash","Magnesium","Total phenols","Flavanoids","NonFlavanoid phenols","Proanthocyanins","Color intensity","Hue","OD280/OD315 of diluted wines","Proline")
+
 str(data1)
 shelp(str)
 summary(data1)
